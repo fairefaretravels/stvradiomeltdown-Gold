@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <link rel="manifest" href="manifest.json" />
-<meta name="theme-color" content="#1a0505" />
+<meta name="theme-color" content="#1a1500" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta name="apple-mobile-web-app-title" content="STV Red" />
+<meta name="apple-mobile-web-app-title" content="STV Gold" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>STV Radiomeltdown — Now Playing</title>
@@ -694,19 +694,10 @@
   // ── INIT ──────────────────────────────────────────────────────────────────
   loadPlaylist();
 </script>
- {
-  "name": "STV Player Red",
-  "short_name": "STV Red",
-  "description": "STV Radiomeltdown Red player",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#1a0505",
-  "theme_color": "#1a0505",
-  "orientation": "portrait",
-  "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
-  ]
-} 
+ <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
 </body>
 </html>
