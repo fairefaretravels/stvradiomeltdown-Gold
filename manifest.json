@@ -1,0 +1,14 @@
+{
+  "name": "STV Player Gold",
+  "short_name": "STV Gold",
+  "description": "STV Radiomeltdown Gold player",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1a1500",
+  "theme_color": "#1a1500",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
